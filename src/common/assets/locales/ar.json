@@ -1,0 +1,9 @@
+{
+  "not.allowed.error": "غير مسموح لك",
+  "user.not.found.error": "مستخدم غير موحود",
+  "no.email.found.error": "بريد الكتروني غير موجود",
+  "not.email.error": "صيغة البريد الإلكتروني غير صحيحه",
+  "email.taken.error": "بريد الكتروني مستخدم",
+  "invalid.email.format.error": "صيغة البريد الإلكتروني غير صالحة",
+  "not.verified.error": "لم يتم التحقق من حسابك بعد، يرجى المحاولة مرة أخرى لاحقًا."
+}

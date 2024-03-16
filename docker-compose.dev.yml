@@ -1,0 +1,38 @@
+version: '3'
+services:
+  app:
+    container_name: task-manager-api
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - ./:/app/
+      - /app/node_modules
+    ports:
+      - 3077:3077
+    command: npm run start:dev
+    depends_on:
+      - redis
+      - mongodb
+    restart: always
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+        - '27017:27017'
+    volumes:
+        - mongo-data:/data/db
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    volumes:
+      - redis-db:/usr/local/etc/redis
+    ports:
+      - "6379:6379"
+
+
+volumes:
+  mongo-data:
+  redis-db:

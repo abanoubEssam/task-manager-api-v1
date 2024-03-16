@@ -1,0 +1,9 @@
+{
+  "not.allowed.error": "you are not allowed",
+  "user.not.found.error": "User Not Found!",
+  "no.email.found.error": "Email Not Found!",
+  "email.taken.error": "Email Taken!",
+  "invalid.email.format.error": "Invalid Email Format!",
+  "not.email.error": "Invalid Email Format!",
+  "not.verified.error": "Your account is not verified yet, please try again later."
+}
